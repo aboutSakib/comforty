@@ -13,21 +13,60 @@
     <link rel="stylesheet" href="./assets/sass/style.css" />
   </head>
   <body>
-    <div class="container-fluid">
-      <nav class="container navbar" id="top-nav">
-        <div class="left d-flex align-items-center gap-2">
-          <i class="fa-solid fa-check"></i>
-          <p>Free shipping on all orders over $50</p>
-        </div>
-        <div class="right">
-          <select name="" id="">
-            <option value="Eng">Eng</option>
-            <option value="Ban">Ban</option>
-          </select>
-          <a href="#">Faqs</a>
+    <main class="container-fluid">
+      <nav class="container-fluid navbar" id="top-nav">
+        <div class="container">
+          <div class="left d-flex align-items-center gap-2">
+            <i class="fa-solid fa-check"></i>
+            <p class="free-shipping">Free shipping on all orders over $50</p>
+          </div>
+          <div class="right d-flex gap-lg-4">
+            <select name="" id="">
+              <option value="Eng">Eng</option>
+              <option value="Ban">Ban</option>
+            </select>
+            <a href="#" class="text-decoration-none text-white">Faqs</a>
+            <a
+              href="#"
+              class="text-decoration-none text-white d-flex align-items-center gap-2"
+            >
+              <i class="fa-solid fa-headset"></i>
+              Need Help</a
+            >
+          </div>
         </div>
       </nav>
-    </div>
+      <!-- close top nav  -->
+      <!-- ----------------------------------------------->
+      <div class="container-fluid" id="secondary-nav">
+        <nav class="navbar container">
+          <div class="logo">
+            <img src="./assets/image/logo.png" alt="" />
+          </div>
+          <div class="search-button">
+            <form action="" class="position-relative">
+              <input type="search" name="" id="" placeholder="Search here..." />
+              <i
+                class="fa-solid fa-magnifying-glass position-absolute search-icon"
+              ></i>
+            </form>
+          </div>
+          <div class="right d-flex gap-lg-3">
+            <div class="cart d-flex align-items-center gap-2">
+              <i class="fa-solid fa-cart-plus"></i>
+              <span>Cart</span>
+              <span class="badge">2</span>
+            </div>
+            <div class="wishlist">
+              <i class="fa-solid fa-heart"></i>
+            </div>
+            <div class="user">
+              <i class="fa-solid fa-user"></i>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </main>
     <!-- ------------------------------------------------------------- -->
     <!-- fontawesome -->
     <script src="./assets/js/all.min.js"></script>
